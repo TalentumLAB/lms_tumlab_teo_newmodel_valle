@@ -66,7 +66,7 @@ services:
       - ./keycloak/config:/opt/bitnami/keycloak/data/import
       - ./keycloak/theme:/opt/bitnami/keycloak/providers
     depends_on:
-      - mailhog
+      - teo_mailhog
       - keycloak_db
     networks:
       - teo-net
@@ -103,7 +103,7 @@ services:
     ports:
       - "4001:4000"
     depends_on:
-      - keycloak
+      - teo_keycloak
     networks:
       - teo-net
 
