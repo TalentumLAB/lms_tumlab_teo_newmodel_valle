@@ -82,8 +82,8 @@ services:
       JWKS_URI: http://tumlab.local:8079/auth/realms/bilinguismovalle/protocol/openid-connect/certs
       DB_HOST: host.docker.internal
       DB_PORT: 3306
-      DB_USER: bilinguismo-db-user
-      DB_PASSWORD: Bilinguismo2022*
+      DB_USER: root
+      DB_PASSWORD: Tumlab2022*
       DB_DATABASE: simat_db
       KEYCLOAK_DB_HOST: keycloak_db
       KEYCLOAK_DB_PORT: 5432
