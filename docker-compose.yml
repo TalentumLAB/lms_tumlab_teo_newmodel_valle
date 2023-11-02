@@ -73,7 +73,7 @@ services:
 
   teo_backend:
     image: bilinguismotalentum/backend:1.3.0
-    container_name: aulas_steam_reporter_backend
+    container_name: teo_backend
     restart: always
     extra_hosts:
       - "host.docker.internal:host-gateway"
@@ -109,7 +109,7 @@ services:
 
   teo_frontend:
     image: bilinguismotalentum/frontend:1.0.0-bilinguismo-valle
-    container_name: bilng_valle_reporter_frontend
+    container_name: teo_frontend
     restart: always
     extra_hosts:
       - "host.docker.internal:host-gateway"
