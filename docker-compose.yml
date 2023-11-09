@@ -41,7 +41,7 @@ services:
       KEYCLOAK_MANAGEMENT_USER: manager
       KEYCLOAK_MANAGEMENT_PASSWORD: password
 
-      KEYCLOAK_DATABASE_VENDOR: POSTGRES
+      # KEYCLOAK_DATABASE_VENDOR: POSTGRES
       KEYCLOAK_DATABASE_HOST: keycloak_db
       KEYCLOAK_DATABASE_PORT: 5432
       KEYCLOAK_DATABASE_NAME: keycloak
@@ -73,7 +73,7 @@ services:
 
   teo_backend:
     image: bilinguismotalentum/backend:1.3.0
-    container_name: aulas_steam_reporter_backend
+    container_name: teo_backend
     restart: always
     extra_hosts:
       - "host.docker.internal:host-gateway"
@@ -82,8 +82,8 @@ services:
       JWKS_URI: http://tumlab.local:8079/auth/realms/bilinguismovalle/protocol/openid-connect/certs
       DB_HOST: host.docker.internal
       DB_PORT: 3306
-      DB_USER: bilinguismo-db-user
-      DB_PASSWORD: Bilinguismo2022*
+      DB_USER: root
+      DB_PASSWORD: Tumlab2022*
       DB_DATABASE: simat_db
       KEYCLOAK_DB_HOST: keycloak_db
       KEYCLOAK_DB_PORT: 5432
@@ -109,7 +109,7 @@ services:
 
   teo_frontend:
     image: bilinguismotalentum/frontend:1.0.0-bilinguismo-valle
-    container_name: bilng_valle_reporter_frontend
+    container_name: teo_frontend
     restart: always
     extra_hosts:
       - "host.docker.internal:host-gateway"
