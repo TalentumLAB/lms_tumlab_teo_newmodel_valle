@@ -125,7 +125,7 @@ services:
       NEXT_PUBLIC_DATABASE_KEY_NAME: bilinguismo_db
       NEXT_PUBLIC_URL_DATA_SYNC: https://sync.bilinguismovalle.com.co/data
     ports: 
-      - "3001:3000"
+      - "3004:3000"
     depends_on:
       - teo_backend
       - teo_keycloak
