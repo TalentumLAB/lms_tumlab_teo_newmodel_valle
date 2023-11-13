@@ -121,7 +121,7 @@ services:
       KEYCLOAK_REALM: bilinguismovalle
       NEXT_PUBLIC_DEFAULT_AUTH_PROVIDER: keycloak
       NEXT_PUBLIC_BACKEND: http://tumlab.local:4001
-      NEXTAUTH_URL: http://tumlab.local:3001
+      NEXTAUTH_URL: http://tumlab.local:3004
       NEXT_PUBLIC_DATABASE_KEY_NAME: bilinguismo_db
       NEXT_PUBLIC_URL_DATA_SYNC: https://sync.bilinguismovalle.com.co/data
     ports: 
